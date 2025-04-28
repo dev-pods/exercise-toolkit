@@ -1,6 +1,6 @@
-## Workflow file Naming Convention
+## Convenção de Nomenclatura de Arquivos de Workflow
 
-Workflows in this directory follow a simple naming convention:
+Os workflows neste diretório seguem uma convenção de nomenclatura simples:
 
-- **Workflows prefixed with `_`** (underscore): These workflows are intended for internal repository functionality only. They are not designed to be reused via `workflow_call` from other repositories.
+- **Workflows com prefixo `_`** (sublinhado): Estes workflows são destinados apenas para funcionalidades internas do repositório. Eles não são projetados para serem reutilizados via `workflow_call` de outros repositórios.
 

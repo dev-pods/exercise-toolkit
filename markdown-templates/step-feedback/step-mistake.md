@@ -1,5 +1,5 @@
 <img src="https://octodex.github.com/images/spidertocat.png" align="right" height="100px" />
 
-It looks like you made a mistake or skipped a step.
+Parece que você cometeu um erro ou pulou uma etapa.
 
 {{ feedback_message }}

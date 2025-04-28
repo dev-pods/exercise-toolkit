@@ -1,25 +1,25 @@
-# Skills Exercises Toolkit :hammer_and_wrench:
+# Kit de Ferramentas para Exercícios de Habilidades :hammer_and_wrench:
 
 <p align="center">
   <img src="https://octodex.github.com/images/manufacturetocat.png" alt="Manufacturetocat" width="300" />
 </p>
 
-## Purpose
+## Objetivo
 
-This repository serves as a comprehensive toolkit for creating and managing GitHub Skills exercises. It provides a collection of tools, templates, and utilities designed to streamline the process of developing educational content for GitHub Skills.
+Este repositório serve como um kit de ferramentas abrangente para criar e gerenciar exercícios do GitHub Skills. Ele fornece uma coleção de ferramentas, modelos e utilitários projetados para simplificar o processo de desenvolvimento de conteúdo educacional para o GitHub Skills.
 
-### Contents
+### Conteúdo
 
-- **[.github/workflows](/.github/workflows)**: GitHub Actions workflows for automating common parts of Skills Exercises
-- **[markdown-templates](/markdown-templates)**: Ready-to-use Markdown templates for creating consistent exercise documentation, instructions, and README files
+- **[.github/workflows](/.github/workflows)**: Fluxos de trabalho do GitHub Actions para automatizar partes comuns dos Exercícios de Skills
+- **[markdown-templates](/markdown-templates)**: Modelos de Markdown prontos para uso na criação de documentação, instruções e arquivos README consistentes para exercícios
 
-## Examples
+## Exemplos
 
-### ⚙️ Reusable Workflows
+### ⚙️ Fluxos de Trabalho Reutilizáveis
 
-For a full list of reusable workflows go to the **[.github/workflows](/.github/workflows)** directory.
+Para uma lista completa de fluxos de trabalho reutilizáveis, acesse o diretório **[.github/workflows](/.github/workflows)**.
 
-#### Starting an exercise
+#### Iniciando um exercício
 
 ```yaml
 jobs:
@@ -27,12 +27,12 @@ jobs:
     name: Start Exercise
     uses: skills/exercise-toolkit/.github/workflows/start-exercise.yml@<git-tag>
     with:
-      exercise-title: "Introduction to GitHub Copilot"
-      intro-message: "Let's get you started with GitHub Copilot :robot: ! We will learn ..."
+      exercise-title: "Introdução ao GitHub Copilot"
+      intro-message: "Vamos começar com o GitHub Copilot :robot:! Aprenderemos ..."
 
 ```
 
-#### Finding an exercise
+#### Localizando um exercício
 
 ```yaml
 
@@ -44,9 +44,9 @@ jobs:
 ```
 
 
-### 📋 Markdown Templates
+### 📋 Modelos de Markdown
 
-For a full list of markdown templates go to the **[markdown-templates](/markdown-templates)** directory.
+Para uma lista completa de modelos de markdown, acesse o diretório **[markdown-templates](/markdown-templates)**.
 
 ```yaml
 steps:
@@ -63,7 +63,7 @@ steps:
 
 ```
 
-Markdown templates are often used together with [skills/action-text-variables](https://github.com/skills/action-text-variables) GitHub Action
+Modelos de markdown são frequentemente usados em conjunto com a Action [skills/action-text-variables](https://github.com/skills/action-text-variables) do GitHub
 
 ```yaml
 steps:
