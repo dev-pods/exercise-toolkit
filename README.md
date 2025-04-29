@@ -25,7 +25,7 @@ Para uma lista completa de fluxos de trabalho reutilizáveis, acesse o diretóri
 jobs:
   start_exercise:
     name: Start Exercise
-    uses: skills/exercise-toolkit/.github/workflows/start-exercise.yml@<git-tag>
+    uses: dev-pods/exercise-toolkit/.github/workflows/start-exercise.yml@<git-tag>
     with:
       exercise-title: "Introdução ao GitHub Copilot"
       intro-message: "Vamos começar com o GitHub Copilot :robot:! Aprenderemos ..."
@@ -39,7 +39,7 @@ jobs:
 jobs:
   find_exercise:
     name: Find Exercise Issue
-    uses: skills/exercise-toolkit/.github/workflows/find-exercise-issue.yml@<git-tag>
+    uses: dev-pods/exercise-toolkit/.github/workflows/find-exercise-issue.yml@<git-tag>
 
 ```
 
@@ -53,7 +53,7 @@ steps:
   - name: Get markdown templates
     uses: actions/checkout@v4
     with:
-      repository: skills/exercise-toolkit
+      repository: dev-pods/exercise-toolkit
       path: exercise-toolkit
       ref: <git-tag>
 
@@ -70,7 +70,7 @@ steps:
   - name: Get markdown templates
     uses: actions/checkout@v4
     with:
-      repository: skills/exercise-toolkit
+      repository: dev-pods/exercise-toolkit
       path: exercise-toolkit
       ref: <git-tag>
 

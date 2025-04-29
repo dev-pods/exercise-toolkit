@@ -62,7 +62,7 @@ jobs:
       - name: Get response templates
         uses: actions/checkout@v4
         with:
-          repository: skills/exercise-toolkit
+          repository: dev-pods/exercise-toolkit
           path: exercise-toolkit
           ref: 7aa247792cb4021203b7c05e65f9128d1c7d2312
 
@@ -105,7 +105,7 @@ jobs:
       - name: Get response templates
         uses: actions/checkout@v4
         with:
-          repository: skills/exercise-toolkit
+          repository: dev-pods/exercise-toolkit
           path: exercise-toolkit
           ref: 7aa247792cb4021203b7c05e65f9128d1c7d2312
 
