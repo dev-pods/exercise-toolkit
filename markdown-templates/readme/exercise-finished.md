@@ -8,7 +8,7 @@ Se você quiser refazer seus passos, pode sempre revisitar o exercício.
 
 [![](https://img.shields.io/badge/Voltar%20ao%20Exerc%C3%ADcio-%E2%86%92-1f883d?style=for-the-badge&logo=github&labelColor=197935)]({{{ issue_url }}})
 
-> [!DICA]
+> [!TIP]
 > A Mona não vai te avaliar desta vez! 😉
 
 

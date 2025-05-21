@@ -27,5 +27,5 @@ Olá {{ login }}, prazer em conhecê-lo!
 }
 ```
 
-> [!DICA]
+> [!TIP]
 > Veja a [sintaxe mustache](https://mustache.github.io/mustache.5.html) para todas as capacidades como iteração e lógica if/then.
