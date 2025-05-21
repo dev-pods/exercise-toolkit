@@ -1,8 +1,8 @@
-## Changes
-<!-- Provide a brief description of the changes introduced by this PR -->
+## Alterações
+<!-- Forneça uma breve descrição das alterações introduzidas por este PR -->
 
 ## Checklist
-<!-- Mark the items with an "x" once completed -->
-- [ ] I have added or updated appropriate labels to this PR
-- [ ] I have tested my changes
-- [ ] I have updated the documentation if needed
+<!-- Marque os itens com um "x" quando concluídos -->
+- [ ] Adicionei ou atualizei as etiquetas apropriadas para este PR
+- [ ] Testei minhas alterações
+- [ ] Atualizei a documentação, se necessário

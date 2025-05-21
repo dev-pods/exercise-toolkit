@@ -1,17 +1,17 @@
 ## {{ title }}
 
-<img alt="original github octocat" src="https://octodex.github.com/images/original.png" align="left" height="80px" />
+<img alt="github octocat original" src="https://octodex.github.com/images/original.png" align="left" height="80px" />
 
-👋 Hey there @{{ login }}! Welcome to your Skills exercise!
+👋 Olá @{{ login }}! Bem-vindo(a) ao seu exercício Skills!
 
 {{ intro_message }}
 
-As you complete each step, I will respond in the comments to:
+Conforme você completa cada etapa, responderei nos comentários para:
 
-- check your work and give feedback
-- share next steps
-- occasionally share tips
-- congratulate you when you finish!
+- verificar seu trabalho e dar feedback
+- compartilhar os próximos passos
+- ocasionalmente compartilhar dicas
+- parabenizá-lo(a) quando terminar!
 
-Good luck and have fun!
+Boa sorte e divirta-se!
 \- Mona

@@ -1,19 +1,19 @@
-# Congratulations! :tada:
+# Parabéns! :tada:
 
 <img src="https://octodex.github.com/images/welcometocat.png" align="right" height="250px" />
 
-Yay **{{ login }}** you finished the exercise! Nice work :tada:
+Eba **{{ login }}** você terminou o exercício! Ótimo trabalho :tada:
 
-If you would like to retrace your steps, you can always revisit the exercise.
+Se você quiser refazer seus passos, pode sempre revisitar o exercício.
 
-[![](https://img.shields.io/badge/Return%20to%20Exercise-%E2%86%92-1f883d?style=for-the-badge&logo=github&labelColor=197935)]({{{ issue_url }}})
+[![](https://img.shields.io/badge/Voltar%20ao%20Exerc%C3%ADcio-%E2%86%92-1f883d?style=for-the-badge&logo=github&labelColor=197935)]({{{ issue_url }}})
 
-> [!TIP]
-> Mona won't grade you this time! 😉
+> [!DICA]
+> A Mona não vai te avaliar desta vez! 😉
 
 
-### Craving more? :raising_hand:
+### Quer mais? :raising_hand:
 
-Did you enjoy this practical style of learning? There's no better way to learn than building things, right?!
+Você gostou deste estilo prático de aprendizado? Não há melhor maneira de aprender do que construindo coisas, certo?!
 
-Let's keep the momentum going! Head over to [GitHub Skills](https://skills.github.com) catalog to find another hands-on exercise. :rocket:
+Vamos manter o ritmo! Visite o catálogo do [GitHub Skills](https://skills.github.com) para encontrar outro exercício prático. :rocket:

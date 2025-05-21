@@ -1,21 +1,21 @@
-# File Exists :package:
+# Arquivo Existe :package:
 
-A GitHub Action that checks if a file exists in the repository.
+Uma GitHub Action que verifica se um arquivo existe no repositório.
 
-This action will fail if the file does not exist
+Esta action falhará se o arquivo não existir
 
-## Inputs ⚙️
+## Entradas ⚙️
 
-| Name   | Description                                                    | Required |
-| ------ | -------------------------------------------------------------- | -------- |
-| `file` | The path to the file to check, relative to the repository root | Yes      |
+| Nome   | Descrição                                                      | Obrigatório |
+| ------ | -------------------------------------------------------------- | ----------- |
+| `file` | O caminho para o arquivo a verificar, relativo à raiz do repositório | Sim         |
 
-## Usage 🚀
+## Uso 🚀
 
 ```yaml
 steps:
   - uses: actions/checkout@v4
-  - name: Check if file exists
+  - name: Verificar se o arquivo existe
     uses: skills/exercise-toolkit/actions/file-exists@<git-tag>
     with:
       file: "path/to/your/file.md"

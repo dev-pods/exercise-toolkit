@@ -1,33 +1,33 @@
 {{#passed}}
 
-## Step {{ step_number }} - Passed ✅
+## Etapa {{ step_number }} - Aprovado ✅
 
 {{/passed}}
 {{^passed}}
 
-## Step {{ step_number }} - Fail ❌
+## Etapa {{ step_number }} - Falha ❌
 
 {{/passed}}
 
 {{#passed}}
-<img src="https://octodex.github.com/images/inflatocat.png" align="right" height="150px" alt="Inflatocat image indicating the step passed" />
+<img src="https://octodex.github.com/images/inflatocat.png" align="right" height="150px" alt="Imagem Inflatocat indicando que a etapa foi aprovada" />
 {{/passed}}
 {{^passed}}
-<img src="https://octodex.github.com/images/spidertocat.png" align="right" height="100px" alt="Spidertocat image indicating the step failed" />
-Some checks failed. Please review the results below and try again.
+<img src="https://octodex.github.com/images/spidertocat.png" align="right" height="100px" alt="Imagem Spidertocat indicando que a etapa falhou" />
+Algumas verificações falharam. Por favor, revise os resultados abaixo e tente novamente.
 
-Time to find the bug! 🤔
+Hora de encontrar o bug! 🤔
 {{/passed}}
 
-| Status | Description |
+| Status | Descrição |
 | --- | --- |
 {{#results_table}}
-| {{#passed}}✅ - Pass{{/passed}}{{^passed}}❌ - Fail{{/passed}} | {{ description }} |
+| {{#passed}}✅ - Aprovado{{/passed}}{{^passed}}❌ - Falha{{/passed}} | {{ description }} |
 {{/results_table}}
 
 {{#tips.length}}
 
-### Tips
+### Dicas
 
 {{#tips}}
 

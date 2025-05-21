@@ -1,37 +1,37 @@
-# Skills Exercises Toolkit :hammer_and_wrench:
+# Kit de Ferramentas para Exercícios Skills :hammer_and_wrench:
 
 <p align="center">
   <img src="https://octodex.github.com/images/manufacturetocat.png" alt="Manufacturetocat" width="300" />
 </p>
 
-- [Skills Exercises Toolkit :hammer\_and\_wrench:](#skills-exercises-toolkit-hammer_and_wrench)
-  - [Purpose](#purpose)
-    - [Contents](#contents)
-  - [Examples](#examples)
-    - [⚙️ Reusable Workflows](#️-reusable-workflows)
-      - [Starting an exercise](#starting-an-exercise)
-      - [Finding an exercise](#finding-an-exercise)
-    - [📋 Markdown Templates](#-markdown-templates)
-  - [Notable Resources](#notable-resources)
+- [Kit de Ferramentas para Exercícios Skills :hammer\_and\_wrench:](#kit-de-ferramentas-para-exercícios-skills-hammer_and_wrench)
+  - [Propósito](#propósito)
+    - [Conteúdos](#conteúdos)
+  - [Exemplos](#exemplos)
+    - [⚙️ Workflows Reutilizáveis](#️-workflows-reutilizáveis)
+      - [Iniciando um exercício](#iniciando-um-exercício)
+      - [Localizando um exercício](#localizando-um-exercício)
+    - [📋 Templates Markdown](#-templates-markdown)
+  - [Recursos Notáveis](#recursos-notáveis)
 
-## Purpose
+## Propósito
 
-This repository serves as a comprehensive toolkit for creating and managing GitHub Skills exercises. It provides a collection of tools, templates, and utilities designed to streamline the process of developing educational content for GitHub Skills.
+Este repositório serve como um kit de ferramentas abrangente para criar e gerenciar exercícios do GitHub Skills. Ele fornece uma coleção de ferramentas, modelos e utilitários projetados para simplificar o processo de desenvolvimento de conteúdo educacional para o GitHub Skills.
 
-### Contents
+### Conteúdos
 
-- **[.github/workflows](/.github/workflows)**: GitHub Actions workflows for automating common parts of Skills Exercises
-- **[markdown-templates](/markdown-templates)**: Ready-to-use Markdown templates for creating consistent exercise documentation, instructions, and README files
-- **[actions](/actions)**: Simple composite actions to help when building GitHub Skills exercises
+- **[.github/workflows](/.github/workflows)**: Workflows do GitHub Actions para automatizar partes comuns dos exercícios Skills
+- **[markdown-templates](/markdown-templates)**: Templates Markdown prontos para uso na criação de documentação consistente de exercícios, instruções e arquivos README
+- **[actions](/actions)**: Actions compostas simples para ajudar na construção de exercícios do GitHub Skills
 
 
-## Examples
+## Exemplos
 
-### ⚙️ Reusable Workflows
+### ⚙️ Workflows Reutilizáveis
 
-For a full list of reusable workflows go to the **[.github/workflows](/.github/workflows)** directory.
+Para uma lista completa de workflows reutilizáveis, acesse o diretório **[.github/workflows](/.github/workflows)**.
 
-#### Starting an exercise
+#### Iniciando um exercício
 
 ```yaml
 jobs:
@@ -39,11 +39,11 @@ jobs:
     name: Start Exercise
     uses: skills/exercise-toolkit/.github/workflows/start-exercise.yml@<git-tag>
     with:
-      exercise-title: "Introduction to GitHub Copilot"
-      intro-message: "Let's get you started with GitHub Copilot :robot: ! We will learn ..."
+      exercise-title: "Introdução ao GitHub Copilot"
+      intro-message: "Vamos começar com o GitHub Copilot :robot: ! Vamos aprender ..."
 ```
 
-#### Finding an exercise
+#### Localizando um exercício
 
 ```yaml
 jobs:
@@ -52,9 +52,9 @@ jobs:
     uses: skills/exercise-toolkit/.github/workflows/find-exercise-issue.yml@<git-tag>
 ```
 
-### 📋 Markdown Templates
+### 📋 Templates Markdown
 
-For a full list of markdown templates go to the **[markdown-templates](/markdown-templates)** directory.
+Para uma lista completa de templates markdown, acesse o diretório **[markdown-templates](/markdown-templates)**.
 
 ```yaml
 steps:
@@ -70,7 +70,7 @@ steps:
       cat exercise-toolkit/markdown-templates/step-feedback/checking-work.md
 ```
 
-Markdown templates are often used together with [skills/action-text-variables](https://github.com/skills/action-text-variables) GitHub Action
+Templates Markdown são frequentemente usados em conjunto com a GitHub Action [skills/action-text-variables](https://github.com/skills/action-text-variables)
 
 ```yaml
 steps:
@@ -95,10 +95,10 @@ steps:
       UPDATED_TEXT: ${{ steps.build-message-congratulations.outputs.updated-text }}
 ```
 
-## Notable Resources
+## Recursos Notáveis
 
-These GitHub Actions are particularly useful when creating GitHub Skills Exercises:
+Estas GitHub Actions são particularmente úteis ao criar Exercícios GitHub Skills:
 
-- **[skills/action-text-variables](https://github.com/skills/action-text-variables)**: Replace variables in template files with dynamic content
-- **[skills/action-keyphrase-checker](https://github.com/skills/action-keyphrase-checker)**: Verify if specific keyphrases exist in files or content
+- **[skills/action-text-variables](https://github.com/skills/action-text-variables)**: Substitui variáveis em arquivos de template com conteúdo dinâmico
+- **[skills/action-keyphrase-checker](https://github.com/skills/action-keyphrase-checker)**: Verifica se frases-chave específicas existem em arquivos ou conteúdo
 
