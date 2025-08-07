@@ -1,36 +1,39 @@
-{{#passed}}
+{%- set all_passed = (results_table | selectattr("passed") | length) == (results_table | length) %}
 
-## Etapa {{ step_number }} - Aprovado ✅
+{%- if all_passed %}
 
-{{/passed}}
-{{^passed}}
+## Step {{ step_number }} - Passed ✅
 
-## Etapa {{ step_number }} - Falha ❌
+{%- else %}
 
-{{/passed}}
+## Step {{ step_number }} - Fail ❌
 
-{{#passed}}
-<img src="https://octodex.github.com/images/inflatocat.png" align="right" height="150px" alt="Imagem Inflatocat indicando que a etapa foi aprovada" />
-{{/passed}}
-{{^passed}}
-<img src="https://octodex.github.com/images/spidertocat.png" align="right" height="100px" alt="Imagem Spidertocat indicando que a etapa falhou" />
-Algumas verificações falharam. Por favor, revise os resultados abaixo e tente novamente.
+{%- endif %}
 
-Hora de encontrar o bug! 🤔
-{{/passed}}
+{%- if all_passed %}
+<img src="https://octodex.github.com/images/inflatocat.png" align="right" height="150px" alt="Inflatocat image indicating the step passed" />
+{%- else %}
 
-| Status | Descrição |
-| --- | --- |
-{{#results_table}}
-| {{#passed}}✅ - Aprovado{{/passed}}{{^passed}}❌ - Falha{{/passed}} | {{ description }} |
-{{/results_table}}
+<img src="https://octodex.github.com/images/spidertocat.png" align="right" height="100px" alt="Spidertocat image indicating the step failed" />
+Some checks failed. Please review the results below and try again.
 
-{{#tips.length}}
+Time to find the bug! 🤔
+{%- endif %}
 
-### Dicas
+| Status | Description |
+| ------ | ----------- |
 
-{{#tips}}
+{%- for row in results_table %}
+| {% if row.passed -%}✅ - Pass{%- else -%}❌ - Fail{%- endif %} | {{ row.description }} |
+{%- endfor %}
 
-- {{.}}
-  {{/tips}}
-  {{/tips.length}}
+{%- if tips and tips.length %}
+
+### Tips
+
+{%- for tip in tips %}
+
+- {{ tip }}
+  {%- endfor %}
+
+{%- endif %}
